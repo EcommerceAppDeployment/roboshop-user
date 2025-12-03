@@ -1,0 +1,9 @@
+name: CI CD branch
+on:
+  push:
+   branches-ignore:
+    - main # Triggers on pushes to the branch other than 'main'  
+  workflow_dispatch: # triggers manual workflow
+jobs:
+  reuse:
+    uses: EcommerceAppDeployment/roboshop-github-actions/.github/workflows/ci_branch.yml@v1
