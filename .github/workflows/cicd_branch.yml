@@ -7,3 +7,6 @@ on:
 jobs:
   reuse:
     uses: EcommerceAppDeployment/roboshop-github-actions/.github/workflows/ci_branch.yml@v1
+    with:
+      app_type: nodejs
+      app_name: user
